@@ -1,0 +1,16 @@
+.*/
+*~
+~*
+*.diff
+*.log
+*.patch
+*.bak
+.DS_Store
+.project
+.svn/
+*.swp
+out/
+node_modules/
+tmp/
+.sass-cache/
+*.map

@@ -1,0 +1,28 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "KissyUI-m",
+  "description": "",
+  "repository": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-contrib-htmlmin": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "",
+    "grunt-kmc": "",
+    "grunt-replace": "",
+    "http-server": ""
+   
+  },
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8080",
+    "prec":  "kissy-xtemplate -p ./ -w"   
+  }
+}
+
+

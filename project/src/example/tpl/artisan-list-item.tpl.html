@@ -1,0 +1,7 @@
+{{#each data}}
+<a class="item item-avatar" href="./artisanDetail?artisan_id={{artisan_id}}">
+  <img src="{{getImgAbsolutePath avatar}}">
+  <h2>{{name}}</h2>
+  <p>服务次数{{service_count}}</p>
+</a>
+{{/each}}

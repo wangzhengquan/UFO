@@ -1,0 +1,277 @@
+/**
+ * Spinners
+ * --------------------------------------------------
+ */
+
+.spinner {
+  svg {
+    width: $spinner-width;
+    height: $spinner-height;
+  }
+
+  stroke: $spinner-default-stroke;
+  fill: $spinner-default-fill;
+
+  &.spinner-light {
+    stroke: $spinner-light-stroke;
+    fill: $spinner-light-fill;
+  }
+  &.spinner-stable {
+    stroke: $spinner-stable-stroke;
+    fill: $spinner-stable-fill;
+  }
+  &.spinner-positive {
+    stroke: $spinner-positive-stroke;
+    fill: $spinner-positive-fill;
+  }
+  &.spinner-calm {
+    stroke: $spinner-calm-stroke;
+    fill: $spinner-calm-fill;
+  }
+  &.spinner-balanced {
+    stroke: $spinner-balanced-stroke;
+    fill: $spinner-balanced-fill;
+  }
+  &.spinner-assertive {
+    stroke: $spinner-assertive-stroke;
+    fill: $spinner-assertive-fill;
+  }
+  &.spinner-energized {
+    stroke: $spinner-energized-stroke;
+    fill: $spinner-energized-fill;
+  }
+  &.spinner-royal {
+    stroke: $spinner-royal-stroke;
+    fill: $spinner-royal-fill;
+  }
+  &.spinner-dark {
+    stroke: $spinner-dark-stroke;
+    fill: $spinner-dark-fill;
+  }
+}
+
+.spinner-big {
+	stroke: #fff;
+	fill: #fff;
+	svg{
+		width: 60px;
+	    height: 60px;
+	}
+}
+.spinner-android {
+  stroke: #4b8bf4;
+}
+
+.spinner-ios,
+.spinner-ios-small {
+  stroke: #69717d;
+}
+
+.spinner-spiral {
+  .stop1 {
+    stop-color: $spinner-light-fill;
+    stop-opacity: 0;
+  }
+
+  &.spinner-light {
+    .stop1 {
+      stop-color: $spinner-default-fill;
+    }
+    .stop2 {
+      stop-color: $spinner-light-fill;
+    }
+  }
+  &.spinner-stable .stop2 {
+    stop-color: $spinner-stable-fill;
+  }
+  &.spinner-positive .stop2 {
+    stop-color: $spinner-positive-fill;
+  }
+  &.spinner-calm .stop2 {
+    stop-color: $spinner-calm-fill;
+  }
+  &.spinner-balanced .stop2 {
+    stop-color: $spinner-balanced-fill;
+  }
+  &.spinner-assertive .stop2 {
+    stop-color: $spinner-assertive-fill;
+  }
+  &.spinner-energized .stop2 {
+    stop-color: $spinner-energized-fill;
+  }
+  &.spinner-royal .stop2 {
+    stop-color: $spinner-royal-fill;
+  }
+  &.spinner-dark .stop2 {
+    stop-color: $spinner-dark-fill;
+  }
+}
+
+
+ /*
+*  Usage:
+*
+*    <div class="sk-spinner sk-spinner-fading-circle">
+*      <div class="sk-circle1 sk-circle"></div>
+*      <div class="sk-circle2 sk-circle"></div>
+*      <div class="sk-circle3 sk-circle"></div>
+*      <div class="sk-circle4 sk-circle"></div>
+*      <div class="sk-circle5 sk-circle"></div>
+*      <div class="sk-circle6 sk-circle"></div>
+*      <div class="sk-circle7 sk-circle"></div>
+*      <div class="sk-circle8 sk-circle"></div>
+*      <div class="sk-circle9 sk-circle"></div>
+*      <div class="sk-circle10 sk-circle"></div>
+*      <div class="sk-circle11 sk-circle"></div>
+*      <div class="sk-circle12 sk-circle"></div>
+*    </div>
+*
+*/
+
+.sk-spinner-fading-circle {
+  &.sk-spinner {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+
+  .sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 18%;
+      height: 18%;
+      background-color: #333;
+      border-radius: 100%;
+      @include animation(sk-circleFadeDelay 1.2s infinite ease-in-out);
+      /* Prevent first frame from flickering when animation starts */
+      @include animation-fill-mode(both);
+      
+    }
+  }
+  
+  .sk-circle2 {
+    @include transform(rotate(30deg));
+    &:before {
+	    -webkit-animation-delay: -1.1s;
+	    animation-delay: -1.1s;
+	 }
+  }
+
+  .sk-circle3 {
+    @include transform(rotate(60deg));
+    &:before {
+	    -webkit-animation-delay: -1s;
+	    animation-delay: -1s;
+	  }
+  }
+
+  .sk-circle4 {
+    @include transform(rotate(90deg));
+    &:before {
+	    -webkit-animation-delay: -0.9s;
+	    animation-delay: -0.9s;
+	  }
+  }
+
+  .sk-circle5 {
+    
+    @include transform(rotate(120deg));
+    &:before {
+	    -webkit-animation-delay: -0.8s;
+	    animation-delay: -0.8s;
+	  }
+  }
+
+  .sk-circle6 {
+    @include transform(rotate(150deg));
+    &:before {
+	    -webkit-animation-delay: -0.7s;
+	    animation-delay: -0.7s;
+	  }
+  }
+
+  .sk-circle7 {
+    @include transform(rotate(180deg));
+    &:before {
+	    -webkit-animation-delay: -0.6s;
+	    animation-delay: -0.6s;
+	  }
+  }
+
+  .sk-circle8 {
+    @include transform(rotate(210deg));
+    &:before {
+	    -webkit-animation-delay: -0.5s;
+	    animation-delay: -0.5s;
+	  }
+  }
+
+  .sk-circle9 {
+    @include transform(rotate(240deg));
+    &:before {
+	    -webkit-animation-delay: -0.4s;
+	    animation-delay: -0.4s;
+	  }
+  }
+
+  .sk-circle10 {
+    @include transform(rotate(270deg));
+    &:before {
+	    -webkit-animation-delay: -0.3s;
+	    animation-delay: -0.3s;
+	  }
+  }
+
+  .sk-circle11 {
+    @include transform(rotate(300deg));
+    &:before {
+	    -webkit-animation-delay: -0.2s;
+	    animation-delay: -0.2s;
+	  }
+  }
+
+  .sk-circle12 {
+    @include transform(rotate(330deg));
+    &:before {
+	    -webkit-animation-delay: -0.1s;
+	    animation-delay: -0.1s;
+	  }
+  }
+}
+
+.masker .sk-spinner-fading-circle .sk-circle:before {
+  background-color: #fff;
+}
+ 
+
+@-webkit-keyframes sk-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes sk-circleFadeDelay{
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+}
+
+ 
+

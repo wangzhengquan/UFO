@@ -1,0 +1,24 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "KissyUI-Project",
+  "description": "",
+  "repository": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-contrib-htmlmin": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "",
+    "grunt-kmc": "",
+    "grunt-replace": ""
+     
+  },
+  "scripts": {
+    "prec": "kissy-xtemplate -p ./ -w"
+  }
+}

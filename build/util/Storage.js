@@ -1,0 +1,3 @@
+/*! 2019-12-27 */
+
+KISSY.add(function(t,e){return{setItem:function(t,e,n){var s=typeof n;"string"==s||"number"==s||"boolean"==s?t.setItem(e,n):t.setItem(e,JSON.stringify(n))},getItem:function(t,e){var n=t.getItem(e);try{return JSON.parse(n)}catch(t){return n}},setLocalItem:function(t,e){this.setItem(localStorage,t,e)},getLocalItem:function(t){return this.getItem(localStorage,t)},setSessionItem:function(t,e){this.setItem(sessionStorage,t,e)},getSessionItem:function(t){return this.getItem(sessionStorage,t)}}},{requires:["node"]});

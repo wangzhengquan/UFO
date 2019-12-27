@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 
+	<meta http-equiv="pragma" content="no-cache"> 
+	<meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
+	<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"> 
+	<meta http-equiv="expires" content="0"> 
+   -->
+<title></title>
+<link href="../../build/resources/css/ufo.css" rel="stylesheet">
+
+<!-- <script src="../../lib/kissy/seed.js" type="text/javascript"></script> -->
+<script src="//g.alicdn.com/??kissy/k/1.4.14/seed.js"
+	data-config="{combine:true}" type="text/javascript"></script>
+<script src="../../build/UFO.js" type="text/javascript"></script>
+<style>
+ 
+</style>
+</head>
+<body>
+	  
+	  <br><br>
+	  <button style="padding: 20px;" id="show-actionsheet">Click Me To Show </button>
+</body>
+</html>
+<script>
+	KISSY.config({
+		packages : {
+			UFO : {
+				path : "../../build",
+				charset : "utf-8",
+				combine : false,
+				tag : KISSY.now(),
+				ignorePackageNameInUri : true,
+				debug : true
+			}
+		}
+	});
+	
+	KISSY.use('UFO/actionsheet/ActionSheet, UFO/button/InputFileButton', function(S, ActionSheet, FileButton){
+		S.one('#show-actionsheet').on('click', function(){
+			var editTextActionSheet = new ActionSheet({
+				items:[
+					{
+						text:'编辑文字',
+						handler: function(cmp, e){
+							me.handleEditTextBtnClick(p, cmp, e);
+						}
+					},{
+						text:'在下方添加文字',
+						handler: function(cmp, e){
+							me.handleInsertTextAfterBtnClick(p, cmp, e);
+						}
+					},{
+						type:'inputfilebutton',
+						text:'在下方添加图片',
+						multiple: true,
+						/*handler: function(){
+							editTextActionSheet.hide();
+							return false;
+						},*/
+						change: function(cmp, e){
+							console.log(cmp, e);
+							//me.handleInsertImgAfterBtnClick(p, cmp, e);
+						}
+					},{ 
+						text:'删除文字',
+						handler: function(cmp, e){
+							me.handleRemoveBtnClick(p, cmp, e);
+						}
+					}]
+			});
+			editTextActionSheet.slideIn();
+		});
+		 
+	});
+</script>

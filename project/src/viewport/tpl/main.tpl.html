@@ -1,0 +1,25 @@
+<div class="main">
+	{{^if no_header}}
+	<header class="bar bar-black bar-header">
+		{{#each leftButtons}}
+		<a href="{{#if href}}{{href}}{{else}}javascript:;{{/if}}" class="button button-clear {{cls}}">
+			{{text}} {{#if iconCls}} <i class="icon iconfont {{iconCls}}"></i> {{/if}}
+		</a>
+		{{/each}}
+		<h1 class="title">{{title}}</h1>
+		<div class="buttons buttons-right">	
+				{{#each rightButtons}}
+				<a href="{{#if href}}href{{else}}javascript:;{{/if}}" class="button button-clear {{cls}}"
+				{{#if attributes}}
+					{{#each attributes}} {{xindex}}="{{this}}" {{/each}}
+				{{/if}}>
+				
+					{{text}} {{#if iconCls}} <i class="icon iconfont {{iconCls}}"></i> {{/if}}
+				</a>
+				{{/each}}
+		</div>
+	</header>
+	{{/if}}
+	<div class="content {{^if no_header}}has-header{{/if}}">
+	</div>
+</div>

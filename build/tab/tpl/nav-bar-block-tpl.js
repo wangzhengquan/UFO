@@ -1,0 +1,3 @@
+/*! 2019-12-27 */
+
+KISSY.add(function(){return'<div class="nav-bar-block" nav-bar="active">\n\t<div class="{{barCls}} bar bar-header disable-user-behavior">\n\t\t<div class="buttons buttons-left" style="transition-duration: 0ms;">\n\t\t\t \n\t\t</div>\n\t\t<div class="title title-center header-item"\n\t\t\tstyle="transform: translate3d(0px, 0px, 0px);">{{title}}</div>\n\t\t<div class="buttons buttons-right">\n\t\t\t \n\t\t</div>\n\t</div>\n</div>'});

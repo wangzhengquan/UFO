@@ -1,0 +1,45 @@
+	{{#each list}}
+		{{#if type==="1"}}
+			<li class="product-item">
+				<a href="{{jump_address}}"></a><img src="{{getImgAbsolutePath img_url}}" style="width:100%;"></a>
+			</li>
+		{{else}}
+		<li class="product-item">
+			<a href="javascript:;" class="card" data-product_id="{{product_id}}">
+				<div class="img-wrapper" style="{{#if ../productImgWidth}}width:{{../productImgWidth}}; height: {{../productImgHeight}};{{/if}}">
+					{{#if tag}}
+					<label class="product-label">{{tag}}</label>
+					{{/if}}
+					{{#if type==="3"}}
+					<div class="bottom-float-layer">
+						<i class="one2many-label">一对多</i> &nbsp; · &nbsp;<i>{{service_start_time}}</i> &nbsp; · &nbsp;<i>{{simple_address}}</i>&nbsp; · &nbsp; <i>已报{{apply_nums}}/{{limit_nums}}</i>
+					</div>
+					{{/if}}
+					<div class="artisan-photo-wrapper">
+						<img src="{{getImgAbsolutePath head_photo_url}}">
+					</div>
+					<img class="product-img" 
+						 style="{{#if ../productImgWidth}} min-width:{{../productImgWidth}}; min-height: {{../productImgHeight}};{{/if}}" 
+						 data-src="{{getImgAbsolutePath img_url}}">
+				</div>
+				<h2 class="product-desc">
+					{{title}}
+				</h2>
+				<h3 class="artisan-desc">
+					<span class="artisan-name">{{nick_modify}}</span>
+					{{#if subtitle}}
+					<span class="artisan-title">{{{subtitle}}}</span>
+					{{/if}}
+				</h3>
+				<div class="price-desc">
+					<span class="now-price">
+						{{zhima_price}}<i class="unit">元</i>
+					</span>
+					<span class="old-price">
+						{{market_price}}元
+					</span>
+				</div>
+			</a>
+		</li>
+		{{/if}}
+	{{/each}}

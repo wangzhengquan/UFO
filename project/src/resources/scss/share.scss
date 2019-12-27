@@ -1,0 +1,103 @@
+@charset "UTF-8"; 
+
+@import
+  "../../../../src/resources/scss/mixins",
+  "./variables",
+  "../../../../src/resources/scss/scaffolding",
+
+   // Components
+  "../../../../src/resources/scss/action-sheet",
+  "../../../../src/resources/scss/backdrop",
+  "../../../../src/resources/scss/bar",
+  "../../../../src/resources/scss/tabs",
+  "../../../../src/resources/scss/menu",
+  "../../../../src/resources/scss/modal",
+  "../../../../src/resources/scss/popover",
+  "../../../../src/resources/scss/popup",
+  "../../../../src/resources/scss/loading",
+  "../../../../src/resources/scss/items",
+  "../../../../src/resources/scss/list",
+  "../../../../src/resources/scss/badge",
+  "../../../../src/resources/scss/slide-box",
+  "../../../../src/resources/scss/refresher",
+  "../../../../src/resources/scss/spinner",
+  
+ 
+
+  // Buttons
+  "../../../../src/resources/scss/button",
+  "../../../../src/resources/scss/button-bar",
+
+  // Util
+  "../../../../src/resources/scss/util",
+  
+   // Animations
+  "../../../../src/resources/scss/animations",
+  "../../../../src/resources/scss/transitions";
+
+ 
+ 
+ 
+body.app{ 
+	position: relative; 
+	padding-top: 20px;
+	&:before {
+    	position: absolute;
+    	top: 0px;
+   	 	left: 0;
+   	 	width: 100%;
+    	height: 20px;
+    	content: "";
+    	background: url(../images/header_bg.jpg) no-repeat;
+    	background-size: 100%;
+    	border-color: #f784a7;
+	}
+}
+ 
+.modal.app{
+	top:20px;
+}
+ 
+
+.main{
+	overflow:hidden;
+	width:100%;
+	min-height:100%;
+	position: relative;
+}
+
+.background {
+  background-color: $background;
+}
+ 
+.color-dark{
+	color: $dark;
+}
+
+.label-left-field{
+	@include display-flex();
+	padding: 15px 0;
+	&+.label-left-field{
+		padding-top:0;
+	}
+	
+	.label{
+		 color: #9b9b9b;
+	}
+	.field{
+		@include fit(1);
+		@include  transition-duration( 300ms);
+	    line-height: 1.5;
+	    white-space: normal;
+	}
+}
+ 
+
+
+
+
+
+
+
+
+

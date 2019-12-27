@@ -1,0 +1,3 @@
+/*! 2019-12-27 */
+
+KISSY.add(function(e,t,n,o){var a=[' <header class="header bar">',"\t   header"," </header>","  \x3c!-- content start --\x3e",' <div class="content header-nav-tab-body has-header has-footer">',"     content"," </div>","  \x3c!-- content end --\x3e",' <footer class="footer">',"    footer"," </footer>"].join("");function r(e){r.superclass.constructor.call(this,e)}return e.extend(r,o),e.augment(r,{initComponent:function(){this.el=e.all(a),r.superclass.initComponent.apply(this,arguments)},getBodyContainer:function(){},addCmpEvents:function(){}}),r},{requires:["node","xtemplate","UFO/Component"]});

@@ -1,0 +1,84 @@
+
+/**
+ * Radio Button Inputs
+ * --------------------------------------------------
+ */
+
+.item-radio {
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+  .item-content {
+	  /* give some room to the right for the checkmark icon */
+	  padding-right: $item-padding * 4;
+	}
+	.radio-icon{
+	  /* checkmark icon will be hidden by default */
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  z-index: $z-index-item-radio;
+	  visibility: hidden;
+	  padding: $item-padding - 2;
+	  height: 100%;
+	  font-size: 20px;
+	  color: $love;
+	}
+  .round-radio{
+   	display:block;
+  	box-sizing:border-box;
+  	border-radius:100%;
+  	border:1px solid #aaa;
+  	width:20px;
+  	height:20px;
+  	position: absolute;
+	 	top: 50%;
+    right: 16px;
+    @include translate(0, -50%);
+	  z-index: $z-index-item-radio;
+	  padding: 3px;
+	  &:after{
+ 			content: ' ';
+ 			display: block;
+ 			border-radius:100%;
+ 			background-color: #f784a7;
+ 			width:100%;
+ 			height:100%;
+ 			visibility: hidden;
+ 		}
+  }
+  input {
+	  /* hide any radio button inputs elements (the ugly circles) */
+	  position: absolute;
+	  left: -9999px;
+	
+	  &:checked + .radio-icon {
+	    /* show the checkmark icon when its checked */
+	    visibility: visible;
+	  }
+	  &:checked + .round-radio {
+	  	border-color: $love;
+	  	&:after {
+		    /* show the checkmark icon when its checked */
+		    visibility: visible;
+		  }
+	  }
+	}
+  
+}
+
+
+ 
+
+// Hack for Android to correctly display the checked item
+// http://timpietrusky.com/advanced-checkbox-hack
+.platform-android.grade-b .item-radio,
+.platform-android.grade-c .item-radio {
+  -webkit-animation: androidCheckedbugfix infinite 1s;
+}
+@-webkit-keyframes androidCheckedbugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}

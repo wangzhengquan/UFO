@@ -1,0 +1,55 @@
+@charset "UTF-8";
+ 
+@import  
+  "../../../../src/resources/scss/mixins",
+  "../../../../src/resources/scss/variables";
+  
+.category-list{
+	padding:7px;
+	.card-item{
+		padding:3px;
+		float: left;
+		width:50%;
+		.card-inner{
+			position:relative;
+			display: block;
+			width:100%;
+		}
+		img{
+			width:100%;
+		}
+	}
+}
+
+.cover{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0, 0, 0, .5);
+	div{
+		@include display-flex();
+		width: 100%;
+    height: 100%;
+		h3{
+			margin: auto;
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+		
+		h5{
+			position: absolute;
+	    color: rgba(255,255,255,.6);
+	    font-size: 13px;
+	    bottom: 20px;
+	    left: 0;
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	    letter-spacing: 1px;
+		}
+	}
+}

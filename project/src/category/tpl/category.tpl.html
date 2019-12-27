@@ -1,0 +1,19 @@
+<div class="scroll-content">
+	<ul class="category-list clear-float">
+		{{#each this}}
+		<li class="card-item">
+			<a href="../product/list.html" data-label_code="{{label_code}}" data-category_code="{{category_code}}" class="card-inner">
+				<img src="{{getImgAbsolutePath img}}">
+				<div class="cover">
+					<div>
+						<h3>{{title}}</h3>
+						<h5>{{subtitle}}</h5>
+					</div>
+				</div>
+			</a>
+		</li>
+	 {{/each}}
+	</ul>
+</div>
+				
+				

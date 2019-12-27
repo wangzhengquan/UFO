@@ -1,0 +1,3 @@
+/*! 2019-12-27 */
+
+KISSY.add(function(t,e){var s=Object.hasOwnPrototype;function n(t){this.values=t,n.superclass.constructor.apply(this,arguments)}return t.extend(n,e),UFO.augment(n,{alias:"model",isDefined:function(t){return s.call(this.values,t)},set:function(t,e){var s=this.values[t];s!=e&&(this.values[t]=e,this.fire("propertychange",t,e,s,this))},get:function(t){return this.values[t]},getValues:function(){return this.values},setValues:function(t){for(var e in t)this.set(e,t[e])}}),n},{requires:["../EventSupport"]});

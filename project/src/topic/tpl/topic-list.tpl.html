@@ -1,0 +1,21 @@
+<div class="tab-body-person">
+ <!--  
+	<form action="javascript:;" class="bar bar-header item-input-inset form-search">
+   	<label class="item-input-wrapper">
+   		<i class="icon iconfont placeholder-icon">&#xe611;</i>
+   		<input type="search" placeholder="搜索高颜值手艺人">
+   	</label>
+	</form>
+	 -->
+	<div class="scroll-content artisan-list">
+		{{#each this}}
+		<a href="javascript:;" data-label_code="{{label_code}}" data-type_code="{{type_code}}" class="item item-avatar  item-icon-right" >
+		  <img src="{{getImgAbsolutePath img}}">
+		  <h2>{{title}}</h2>
+		  <p>{{subtitle}}</p>
+		  <i class="icon iconfont icon-forward"></i>
+		</a>
+		{{/each}}
+		
+	</div>
+</div>			
