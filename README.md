@@ -16,26 +16,29 @@
 
 [icon](https://wangzhengquan.github.io/KissyUI-M/demo/icon/icon.html)
 
-[item-avatar](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-avatar.html)
+[Item avatar](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-avatar.html)
 
-[item-icon](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-icon.html)
+[Item icon](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-icon.html)
 
-[item-thumbnail](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-thumbnail.html)
+[Ttem thumbnail](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-thumbnail.html)
 
-[mask](https://wangzhengquan.github.io/KissyUI-M/demo/mask/mask.html)
+[Mask](https://wangzhengquan.github.io/KissyUI-M/demo/mask/mask.html)
 
 
-[photo-browser-modal](https://wangzhengquan.github.io/KissyUI-M/demo/modal/photo-browser-modal.html)
+[Photo browser modal](https://wangzhengquan.github.io/KissyUI-M/demo/modal/photo-browser-modal.html)
 
-[message-box](https://wangzhengquan.github.io/KissyUI-M/demo/popup/message-box.html)
+[Message box](https://wangzhengquan.github.io/KissyUI-M/demo/popup/message-box.html)
 
-[photo-brower](https://wangzhengquan.github.io/KissyUI-M/demo/slider/photo-browser.html)
+[Photo brower](https://wangzhengquan.github.io/KissyUI-M/demo/slider/photo-browser.html)
 
-[slider-lazyload](https://wangzhengquan.github.io/KissyUI-M/demo/slider/slider-lazyload.html)
+[Image slider](https://wangzhengquan.github.io/KissyUI-M/demo/slider/image-slider.html)
 
-[slider](https://wangzhengquan.github.io/KissyUI-M/demo/slider/slider.html)
+[Slider](https://wangzhengquan.github.io/KissyUI-M/demo/slider/slider.html)
 
-[spinner](https://wangzhengquan.github.io/KissyUI-M/demo/spinner/spinner.html)
+[Slider vertical](https://wangzhengquan.github.io/KissyUI-M/demo/slider/slider-vertical.html)
+
+
+[Spinner](https://wangzhengquan.github.io/KissyUI-M/demo/spinner/spinner.html)
 
 
 
