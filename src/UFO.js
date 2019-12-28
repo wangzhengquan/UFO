@@ -116,6 +116,7 @@
     return UFO;
   };
 
+
   //避免该文件被加载两次的情况下，UFO被重新实例化
   if(!window.UFO) {
     window.UFO = createUFO();
