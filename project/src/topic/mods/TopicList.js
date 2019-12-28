@@ -1,5 +1,5 @@
 KISSY.add(function(S, Node, Event, XTemplate, 
-    Component, MessageBox, app, tpl, UFO, mycss) {
+    Component, MessageBox, app, tpl, mycss) {
     function PersonList(config) {
 
         PersonList.superclass.constructor.call(this, config);
@@ -85,7 +85,6 @@ KISSY.add(function(S, Node, Event, XTemplate,
         "UFO/popup/MessageBox",
         "../../app",
         "../tpl/topic-list-tpl",
-        "UFO/UFO",
         "css/topiclist.css"
     ]
 });

@@ -1,5 +1,5 @@
 KISSY.add(function(S, Node, XTemplate, Action, 
-	Component, XTemplateUtil, list_tpl, list_item_tpl, UFO, mycss){
+	Component, XTemplateUtil, list_tpl, list_item_tpl, mycss){
 		
 	var listItemTpl = new XTemplate(list_item_tpl);
 	function ArtisanList(){
@@ -79,7 +79,6 @@ KISSY.add(function(S, Node, XTemplate, Action,
 	            "../../util/XTemplateUtil",
 	            "../tpl/artisan-list-tpl",
 	            "../tpl/artisan-list-item-tpl",
-	            "UFO/UFO",
 	            "css/example_artisan_list.css"
 	            ]
 });

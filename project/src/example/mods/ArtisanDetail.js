@@ -6,7 +6,6 @@ KISSY.add(function(S,
   app,
   tpl,
   content_tpl,
-  UFO,
   mycss){
 
   var PARAM = app.getParam();
@@ -81,7 +80,6 @@ KISSY.add(function(S,
     "../../app",
     "../tpl/artisan-detail-tpl",
     "../tpl/artisan-detail-content-tpl",
-    "UFO/UFO",
     "css/example_artisan_detail.css"
   ]
 });

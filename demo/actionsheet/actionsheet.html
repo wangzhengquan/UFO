@@ -9,6 +9,7 @@
     <!-- <script src="../../lib/kissy/seed.js" type="text/javascript"></script> -->
     <script src="//g.alicdn.com/??kissy/k/1.4.14/seed.js"
             data-config="{combine:true}" type="text/javascript"></script>
+    <script src="../../build/UFO.js" type="text/javascript"></script> 
 
     <style>
 
@@ -34,7 +35,7 @@
     }
   });
 
-KISSY.use('UFO/actionsheet/ActionSheet, UFO/button/InputFileButton, UFO/UFO, UFO/resources/css/ufo.css', function(S, ActionSheet, FileButton){
+KISSY.use('UFO/actionsheet/ActionSheet, UFO/button/InputFileButton, UFO/resources/css/ufo.css', function(S, ActionSheet, FileButton){
   S.one('#show-actionsheet').on('click', function(){
     var editTextActionSheet = new ActionSheet({
       items:[

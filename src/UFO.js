@@ -1,4 +1,4 @@
-var UFO = UFO || {};
+var UFO = window.UFO = window.UFO || {};
 (function() {
     UFO.aliasMap = {};
     var global = this;
@@ -113,7 +113,3 @@ var UFO = UFO || {};
         }
     });
 })();
-
-KISSY.add(function(S){
-    return UFO;
-});

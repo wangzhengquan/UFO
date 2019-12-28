@@ -3,7 +3,6 @@ KISSY.add(function(S, Node, Event, XTemplate,
     MessageBox, 
     XTemplateUtil,
     tpl,
-    UFO,
     mycss) {
 
     var win = window;
@@ -129,7 +128,6 @@ KISSY.add(function(S, Node, Event, XTemplate,
     requires: ['node', 'event', "xtemplate", "UFO/Component", "UFO/popup/MessageBox",
         "../../util/XTemplateUtil",
         "../tpl/category-tpl",
-        "UFO/UFO",
         "css/category.css"
     ]
 });
