@@ -9970,6 +9970,12 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   transition-duration: 0s;
 }
 
+@media screen and (min-width: 750px) {
+  body, html {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
 body.app {
   position: relative;
   padding-top: 20px;
@@ -10433,12 +10439,6 @@ body.app:before {
   display: block;
 }
 
-@media screen and (min-width: 750px) {
-  body, html {
-    width: 750px;
-    margin: 0 auto;
-  }
-}
 .category-list {
   padding: 7px;
 }

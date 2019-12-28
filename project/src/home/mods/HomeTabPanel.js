@@ -1,4 +1,4 @@
-KISSY.add(function(S, Node, Event, XTemplate,TabPanel, CategoryTab, homecss){
+KISSY.add(function(S, Node, Event, XTemplate,TabPanel, CategoryTab){
 	
 	
 	function HomeTabPanel(config){
@@ -56,8 +56,7 @@ KISSY.add(function(S, Node, Event, XTemplate,TabPanel, CategoryTab, homecss){
 	requires: [
 	   "node", "event", "xtemplate",
 	   "UFO/tab/TabPanel",	   
-	   "./ProductListTab",
-	   //css也可以动态引入
-	   "css/home.css"	   	    
+	   "./ProductListTab"
+	      	    
 	]
 });

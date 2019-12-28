@@ -30,18 +30,7 @@
           tag: tag,
           ignorePackageNameInUri:true,
           debug:true
-        },
-        css:{
-          //css也可以动态引入
-          path:"../resources/css",
-          charset:"utf-8",
-          combine:false,
-          //tag:KISSY.now(),
-          tag: tag,
-          ignorePackageNameInUri:true,
-          debug:true
         }
-
       }
     });
 

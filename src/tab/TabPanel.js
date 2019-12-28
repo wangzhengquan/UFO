@@ -137,20 +137,17 @@ KISSY.add(function(S, Node, Event, XTemplate, Button, Container,
 					if(item.path){
 						S.use(item.path, function(S, constructor){
 							me.createTabItem(item, index);
-							location.hash=item.name;
 							me.setActiveTabStyle(index);
 							cb && cb();
 						});
 					}else{
 						
 						me.createTabItem(item, index);
-						location.hash=item.name;
 						me.setActiveTabStyle(index);
 						cb && cb();
 					}
 					//this.load(item, tabBody.one('.scroll-content'), navBarBlock, index);
 				}else{
-					location.hash=item.name;
 					me.setActiveTabStyle(index);
 					cb && cb();
 				}

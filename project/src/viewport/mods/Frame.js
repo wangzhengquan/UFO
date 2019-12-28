@@ -1,4 +1,4 @@
-KISSY.add(function(S, Node, XTemplate, Container, tpl, mycss){
+KISSY.add(function(S, Node, XTemplate, Container, tpl){
 	 
 	function Viewport(config){
 		 
@@ -33,6 +33,6 @@ KISSY.add(function(S, Node, XTemplate, Container, tpl, mycss){
 	return Viewport;
 }, {
 	requires: ['node', "xtemplate",  
-	"UFO/container/Container" , "../tpl/main-tpl",
-	"css/product-list.css"]
+	"UFO/container/Container" , "../tpl/main-tpl"
+	]
 });

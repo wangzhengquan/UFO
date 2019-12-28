@@ -127,8 +127,8 @@ KISSY.add(function(S, Node, Event, XTemplate,
 }, {
     requires: ['node', 'event', "xtemplate", "UFO/Component", "UFO/popup/MessageBox",
         "../../util/XTemplateUtil",
-        "../tpl/category-tpl",
-        "css/category.css"
+        "../tpl/category-tpl"
+        
     ]
 });
  

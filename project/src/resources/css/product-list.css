@@ -9970,6 +9970,12 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   transition-duration: 0s;
 }
 
+@media screen and (min-width: 750px) {
+  body, html {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
 body.app {
   position: relative;
   padding-top: 20px;
@@ -10686,13 +10692,6 @@ body.app:before {
 
 .item:last-child:after {
   display: block;
-}
-
-@media screen and (min-width: 750px) {
-  body, html {
-    width: 750px;
-    margin: 0 auto;
-  }
 }
 
 /*# sourceMappingURL=product-list.css.map */

@@ -36,7 +36,9 @@
   "../../../../src/resources/scss/transitions";
 
  
- 
+@media screen and (min-width:750px) {
+  body,html{width:750px;margin:0 auto;}
+} 
  
 body.app{ 
 	position: relative; 

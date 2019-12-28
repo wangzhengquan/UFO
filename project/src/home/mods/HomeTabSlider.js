@@ -57,8 +57,7 @@ KISSY.add(function(S, Node, Event, XTemplate,  TabSlider, XTemplateUtil, Recomme
 	           "../../util/XTemplateUtil",
 	           "../../product/mods/List",
 	           "../../topic/mods/TopicList",
-	           "../../category/mods/CategoryList",
-	           "css/home.css"
+	           "../../category/mods/CategoryList"
 	           ]
 });
 
