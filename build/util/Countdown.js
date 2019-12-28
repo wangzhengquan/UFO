@@ -1,3 +1,3 @@
-/*! 2019-12-27 */
+/*! 2019-12-28 */
 
 KISSY.add(function(t){function o(t){var e=0,n=0,r=0,a=0;return 0<t&&(e=Math.floor(t/86400),n=Math.floor(t/3600)-24*e,r=Math.floor(t/60)-24*e*60-60*n,a=Math.floor(t)-24*e*60*60-60*n*60-60*r),r<=9&&(r="0"+r),a<=9&&(a="0"+a),[e,n,r,a]}return{calcTime:o,countdown:function(t,e){var n=new Date,r=parseInt((t.getTime()-n.getTime())/1e3),a=setInterval(function(){var t=o(r);r--,e&&e(t),r<=0&&clearInterval(a)},1e3)}}});

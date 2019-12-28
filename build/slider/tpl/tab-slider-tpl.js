@@ -1,3 +1,3 @@
-/*! 2019-12-27 */
+/*! 2019-12-28 */
 
 KISSY.add(function(){return'\t<div class="slider slider-horizontal tab-slider" style="visibility: visible;">\n\t\t\t<div class="tabbar">\n\t\t\t\t<div class="tabbar-inner">\n\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t<div class="tab-link-highlight-track">\n\t\t\t  \t<span class="tab-link-highlight" style="transform: translate3d(0, 0, 0);"></span>\n\t\t\t  </div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div class="slider-wrapper">\n\t\t\t</div>\n\t</div>'});
