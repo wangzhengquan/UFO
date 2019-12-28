@@ -135,7 +135,7 @@
           debug:true
         },
         css:{
-          path:"./resources/css",
+          path:"../resources/css",
           charset:"utf-8",
           combine:false,
           //tag:KISSY.now(),

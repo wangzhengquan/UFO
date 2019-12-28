@@ -34,12 +34,12 @@ module.exports = function (grunt) {
           ignorePackageNameInUri:true
         },{
           name: 'UFO',
-          path: './lib/ufo',
+          path: '../src',
           charset:'utf-8',
           ignorePackageNameInUri:true
         },{
           name: 'mui',
-          path:"./lib/kissy/mui",
+          path:"../lib/kissy_mui",
           charset:'utf-8',
           ignorePackageNameInUri:true
         }]
