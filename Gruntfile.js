@@ -39,7 +39,8 @@ module.exports = function (grunt) {
 	sass: {
         dest: {
             files: {
-            	'<%= dest%>/resources/css/ufo.css': '<%= src%>/resources/scss/ufo.scss'
+            	'<%= dest%>/resources/css/ufo.css': '<%= src%>/resources/scss/ufo.scss',
+              '<%= src%>/resources/css/ufo.css': '<%= src%>/resources/scss/ufo.scss'
             }
            
         }
@@ -83,8 +84,8 @@ module.exports = function (grunt) {
               expand:true,
               cwd:'<%= dest%>',//dest目录下
               src:'resources/**/*.css',//所有css文件
-              dest: '<%= dest%>',//输出到此目录下
-              ext: '.min.css'
+              dest: '<%= dest%>'//输出到此目录下
+              //ext: '.min.css'
           }]
       
       }

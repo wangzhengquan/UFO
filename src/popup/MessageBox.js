@@ -45,9 +45,10 @@ KISSY.add(function(S, Node, Promise, Container){
     MessageBox.YES = 2; 	 		//10
     MessageBox.NO = 4; 			//100
     MessageBox.CANCEL = 8; 		//1000
-    MessageBox.YESNO = 6;  		//110
-    MessageBox.OKCANCEL = 9; 		//1001
-    MessageBox.YESNOCANCEL = 14; 	//1110
+
+    MessageBox.YESNO = MessageBox.YES | MessageBox.NO;
+    MessageBox.OKCANCEL = MessageBox.OK | MessageBox.CANCEL;		
+    MessageBox.YESNOCANCEL = MessageBox.YES | MessageBox.NO | MessageBox.CANCEL;
 	
 	UFO.augment(MessageBox, {
 	 
@@ -178,6 +179,7 @@ KISSY.add(function(S, Node, Promise, Container){
 	});
 	
 	 /**
+	 * @For example:
      * config{
            title: 'Delete Note',
            msg: 'Please enter your address:',
@@ -192,6 +194,8 @@ KISSY.add(function(S, Node, Promise, Container){
          
        }
      */
+     
+
 	MessageBox.show = function(config){
     	var messageBox = new MessageBox(config),
     	 	deferred = S.Defer();  
@@ -209,13 +213,18 @@ KISSY.add(function(S, Node, Promise, Container){
 	   	});
     	 
     	messageBox.on('cancel', function(){
-   		 deferred.resolve(MessageBox.OKCANCEL);
+   		 deferred.resolve(MessageBox.CANCEL);
     	});
     	 
     	return deferred.promise;
     }
 	    
-	MessageBox.confirm = function(title, msg, buttonText,fn){
+	MessageBox.confirm = function(title, msg, buttonText, okfn, cancelfn){
+		if (S.isFunction(buttonText)) {
+			cancelfn = okfn;
+			okfn = buttonText;
+			buttonText = undefined;
+		}
     	var config = {
     		title: title,
     		icon: MessageBox.QUESTION,
@@ -223,9 +232,12 @@ KISSY.add(function(S, Node, Promise, Container){
     		buttons: MessageBox.OKCANCEL,
     		buttonText: buttonText,
     		buttonListeners:{
-    			ok:fn
+    			'ok': okfn,
+    			'cancel': cancelfn
     		}
     	};
+    	 
+    	
     	return MessageBox.show(config); 
     }
     

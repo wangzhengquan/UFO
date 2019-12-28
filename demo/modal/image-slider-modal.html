@@ -5,10 +5,8 @@
           content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="../../build/resources/css/ufo.min.css" rel="stylesheet">
     <script src="//g.alicdn.com/??kissy/k/1.4.14/seed.js"
             data-config="{combine:true}" type="text/javascript"></script>
-    <script src="../../build/UFO.js" type="text/javascript"></script>
     <style>
 .main{
   position: absolute;
@@ -42,7 +40,7 @@
     }
   });
 
-KISSY.use('UFO/modal/ImageSliderModal', function(S, ImageSliderModal){
+KISSY.use('UFO/modal/ImageSliderModal, UFO/UFO, UFO/resources/css/ufo.css', function(S, ImageSliderModal){
   //document.body.scrollTop = 100;
   var modal = new ImageSliderModal({
     data:[
@@ -52,9 +50,9 @@ KISSY.use('UFO/modal/ImageSliderModal', function(S, ImageSliderModal){
       {url: '../resources/img/slide-4.jpg'}
 
     ],
-    defaultIndex: 2,
-    autoSlide: false,
-    loop: false
+    defaultIndex: 0,
+    autoSlide: true,
+    loop: true
 
   });
   modal.show();
