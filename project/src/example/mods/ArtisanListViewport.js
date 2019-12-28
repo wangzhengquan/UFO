@@ -11,7 +11,7 @@ KISSY.add(function(S, Node, Viewport, List){
 	S.augment(ListViewport, {
 		
 		initComponent: function(){
-			
+			console.log("ArtisanListViewport init");
 			//
 			/*var list = new List();
 			this.items = [list];

@@ -126,3 +126,4 @@ KISSY.add(function(S, Node, Event, XTemplate, Component, MessageBox, XTemplateUt
         "../tpl/category-tpl"
     ]
 });
+ 

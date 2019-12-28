@@ -27,6 +27,7 @@ module.exports = function (grunt) {
         * 为false的时候，会直接在用户配置的src中的文件添加模块名。
         */
         copyAssets: true,
+        ///*这里配置的路径是以工程目录为基准，项目里的config.js是以浏览器访问路径为基准*/
         packages: [{
           name: 'app',
           path: '<%= src%>/',
@@ -34,12 +35,12 @@ module.exports = function (grunt) {
           ignorePackageNameInUri:true
         },{
           name: 'UFO',
-          path: './lib/ufo',
+          path: '../src',
           charset:'utf-8',
           ignorePackageNameInUri:true
         },{
           name: 'mui',
-          path:"./lib/kissy/mui",
+          path:"../lib/kissy_mui",
           charset:'utf-8',
           ignorePackageNameInUri:true
         }]
@@ -50,7 +51,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: '<%= src%>/',
             src: [
-              'app.js',
+              'app.js',              
 
               'example/mods/ArtisanDetail.js',
               'example/mods/ArtisanList.js',
@@ -108,7 +109,8 @@ module.exports = function (grunt) {
               '!**/*.tpl.html',
               'resources/**/*.*',
               '!resources/**/*.scss',
-              'startup.js'
+              'config.js'
+              
             ],
             dest: '<%= dist%>'
           }

@@ -18,6 +18,7 @@ KISSY.add(function(S, Node, XTemplate, Action, Component, XTemplateUtil, list_tp
 		 * @overide
 		 */
 		initComponent: function(){
+			console.log("ArtisanList init");
 			this.el = S.one(list_tpl);
 			 
 			ArtisanList.superclass.initComponent.apply(this, arguments);
@@ -79,3 +80,5 @@ KISSY.add(function(S, Node, XTemplate, Action, Component, XTemplateUtil, list_tp
 	            "../tpl/artisan-list-item-tpl"
 	            ]
 });
+
+ 

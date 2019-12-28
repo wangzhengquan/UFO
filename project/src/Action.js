@@ -19,14 +19,14 @@ KISSY.add(function(S, IO, app){
 						
 			}
 			config.data = S.mix({
-				version: G_CONFIG.version
+				version: app.version
 			}, config.data);
 			
 			return $.io(config);
 		},
 		
 		ajax: function(config){
-			config.url =   G_CONFIG.API_HOST + config.url ;
+			config.url =   app.API_HOST + config.url ;
 			
 			return this.ajax2(config);
 		},
@@ -102,7 +102,7 @@ KISSY.add(function(S, IO, app){
 			
 			var formData = new FormData();
 			formData.append('uploadImage', config.file);
-			oReq.open("post", G_CONFIG.API_HOST + '/v2/upload_image', true);
+			oReq.open("post", app.API_HOST + '/v2/upload_image', true);
 			oReq.send(formData);
 		},
 	 
@@ -133,7 +133,7 @@ KISSY.add(function(S, IO, app){
 			
 			S.mix(config, {
 			   type: "post",
-			   url: G_CONFIG.API_HOST + url,
+			   url: app.API_HOST + url,
 			   data: formData,
 			   dataType:'json',
 			   headers: {

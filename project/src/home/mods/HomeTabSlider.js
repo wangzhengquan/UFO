@@ -60,3 +60,4 @@ KISSY.add(function(S, Node, Event, XTemplate,  TabSlider, XTemplateUtil, Recomme
 	           "../../category/mods/CategoryList"
 	           ]
 });
+
