@@ -1,5 +1,10 @@
-KISSY.add(function(S, Node, Event, XTemplate, Component, MessageBox, XTemplateUtil,
-    tpl) {
+KISSY.add(function(S, Node, Event, XTemplate, 
+    Component, 
+    MessageBox, 
+    XTemplateUtil,
+    tpl,
+    UFO,
+    mycss) {
 
     var win = window;
     var img_width = 0,
@@ -123,7 +128,9 @@ KISSY.add(function(S, Node, Event, XTemplate, Component, MessageBox, XTemplateUt
 }, {
     requires: ['node', 'event', "xtemplate", "UFO/Component", "UFO/popup/MessageBox",
         "../../util/XTemplateUtil",
-        "../tpl/category-tpl"
+        "../tpl/category-tpl",
+        "UFO/UFO",
+        "css/category.css"
     ]
 });
  

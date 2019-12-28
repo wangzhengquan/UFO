@@ -113,3 +113,7 @@ var UFO = UFO || {};
         }
     });
 })();
+
+KISSY.add(function(S){
+    return UFO;
+});

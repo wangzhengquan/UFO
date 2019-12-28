@@ -1,4 +1,4 @@
-KISSY.add(function(S, Node, Event, XTemplate,  TabSlider, XTemplateUtil, RecommendList, PersonList, ThingList){
+KISSY.add(function(S, Node, Event, XTemplate,  TabSlider, XTemplateUtil, RecommendList, PersonList, ThingList, UFO){
 	var body = document.body;
 	 
 		
@@ -57,7 +57,9 @@ KISSY.add(function(S, Node, Event, XTemplate,  TabSlider, XTemplateUtil, Recomme
 	           "../../util/XTemplateUtil",
 	           "../../product/mods/List",
 	           "../../topic/mods/TopicList",
-	           "../../category/mods/CategoryList"
+	           "../../category/mods/CategoryList",
+	           "UFO/UFO",
+	           "css/home.css"
 	           ]
 });
 

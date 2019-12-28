@@ -1,13 +1,7 @@
 (function(global){
-
-  // var debug = false;
-  // global.APP = global.APP || {};
-  // if(location.search.indexOf('debug') !== -1 ){
-  //   debug = true;
-  // }
   
   var tag = '20151111';
-  /*这里配置的路径是以浏览器访问路径为基准，grunt kmc配置路径是以工程目录为基准*/
+  /*这里配置的路径是以浏览器访问路径为基准，grunt文件里kmc配置路径是以工程目录为基准*/
   KISSY.config({
       packages:{
         UFO: {
@@ -38,7 +32,8 @@
           debug:true
         },
         css:{
-          path:"./resources/css",
+          //css也可以动态引入
+          path:"../resources/css",
           charset:"utf-8",
           combine:false,
           //tag:KISSY.now(),
@@ -49,6 +44,12 @@
 
       }
     });
+
+  // var debug = false;
+  // global.APP = global.APP || {};
+  // if(location.search.indexOf('debug') !== -1 ){
+  //   debug = true;
+  // }
 
   // var doc = document; 
   // var docHead = function () {

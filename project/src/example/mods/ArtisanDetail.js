@@ -5,7 +5,9 @@ KISSY.add(function(S,
   XTemplateUtil,
   app,
   tpl,
-  content_tpl){
+  content_tpl,
+  UFO,
+  mycss){
 
   var PARAM = app.getParam();
 
@@ -78,8 +80,9 @@ KISSY.add(function(S,
     "../../util/XTemplateUtil",
     "../../app",
     "../tpl/artisan-detail-tpl",
-    "../tpl/artisan-detail-content-tpl"
-
+    "../tpl/artisan-detail-content-tpl",
+    "UFO/UFO",
+    "css/example_artisan_detail.css"
   ]
 });
 
