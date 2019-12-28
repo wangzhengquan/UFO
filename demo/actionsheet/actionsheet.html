@@ -43,12 +43,12 @@ KISSY.use('UFO/actionsheet/ActionSheet, UFO/button/InputFileButton', function(S,
         {
           text:'编辑文字',
           handler: function(cmp, e){
-            me.handleEditTextBtnClick(p, cmp, e);
+            console.log('processing...');
           }
         },{
           text:'在下方添加文字',
           handler: function(cmp, e){
-            me.handleInsertTextAfterBtnClick(p, cmp, e);
+            console.log('processing...');
           }
         },{
           type:'inputfilebutton',
@@ -59,13 +59,12 @@ KISSY.use('UFO/actionsheet/ActionSheet, UFO/button/InputFileButton', function(S,
               return false;
             },*/
           change: function(cmp, e){
-            console.log(cmp, e);
-            //me.handleInsertImgAfterBtnClick(p, cmp, e);
+            console.log('processing...');
           }
         },{
           text:'删除文字',
           handler: function(cmp, e){
-            me.handleRemoveBtnClick(p, cmp, e);
+            console.log('processing...');
           }
         }]
     });
