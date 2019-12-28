@@ -2,8 +2,8 @@ KISSY.add(function(S, Node, Event, XTemplate,
     Component, 
     MessageBox, 
     XTemplateUtil,
-    tpl,
-    mycss) {
+    tpl
+    ) {
 
     var win = window;
     var img_width = 0,

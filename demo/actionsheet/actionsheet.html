@@ -34,8 +34,7 @@
       }
     }
   });
-//在实际项目中不用在JS模块中依赖CSS，如果多个模块引用了相同的CSS,加载器并不会去重，会引起CSS重复加载，
-//不但影响性能，而且会使项目管理变的混乱
+
 KISSY.use('UFO/actionsheet/ActionSheet, UFO/button/InputFileButton, UFO/resources/css/ufo.css', function(S, ActionSheet, FileButton){
   S.one('#show-actionsheet').on('click', function(){
     var editTextActionSheet = new ActionSheet({
