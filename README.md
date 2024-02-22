@@ -2,43 +2,43 @@
 该项目是基于kissy开发的一套移动端的组件框架
 
 ## 项目演示
-[项目演示链接](https://wangzhengquan.github.io/KissyUI-M/project/build/home/index2.html)
+[项目演示链接](https://wangzhengquan.github.io/UFO/project/build/home/index2.html)
 
-[项目演示链接2](https://wangzhengquan.github.io/KissyUI-M/project/build/home/index.html)
+[项目演示链接2](https://wangzhengquan.github.io/UFO/project/build/home/index.html)
 
 ## 实例演示
 
-[tabpanel](https://wangzhengquan.github.io/KissyUI-M/demo/tab/tabpanel.html)
+[tabpanel](https://wangzhengquan.github.io/UFO/demo/tab/tabpanel.html)
 
-[actionsheet](https://wangzhengquan.github.io/KissyUI-M/demo/actionsheet/actionsheet.html)
+[actionsheet](https://wangzhengquan.github.io/UFO/demo/actionsheet/actionsheet.html)
 
-[form](https://wangzhengquan.github.io/KissyUI-M/demo/form/form.html)
+[form](https://wangzhengquan.github.io/UFO/demo/form/form.html)
 
-[icon](https://wangzhengquan.github.io/KissyUI-M/demo/icon/icon.html)
+[icon](https://wangzhengquan.github.io/UFO/demo/icon/icon.html)
 
-[Item avatar](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-avatar.html)
+[Item avatar](https://wangzhengquan.github.io/UFO/demo/item/item-avatar.html)
 
-[Item icon](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-icon.html)
+[Item icon](https://wangzhengquan.github.io/UFO/demo/item/item-icon.html)
 
-[Ttem thumbnail](https://wangzhengquan.github.io/KissyUI-M/demo/item/item-thumbnail.html)
+[Ttem thumbnail](https://wangzhengquan.github.io/UFO/demo/item/item-thumbnail.html)
 
-[Mask](https://wangzhengquan.github.io/KissyUI-M/demo/mask/mask.html)
-
-
-[Photo browser modal](https://wangzhengquan.github.io/KissyUI-M/demo/modal/photo-browser-modal.html)
-
-[Message box](https://wangzhengquan.github.io/KissyUI-M/demo/popup/message-box.html)
-
-[Photo brower](https://wangzhengquan.github.io/KissyUI-M/demo/slider/photo-browser.html)
-
-[Image slider](https://wangzhengquan.github.io/KissyUI-M/demo/slider/image-slider.html)
-
-[Slider](https://wangzhengquan.github.io/KissyUI-M/demo/slider/slider.html)
-
-[Slider vertical](https://wangzhengquan.github.io/KissyUI-M/demo/slider/slider-vertical.html)
+[Mask](https://wangzhengquan.github.io/UFO/demo/mask/mask.html)
 
 
-[Spinner](https://wangzhengquan.github.io/KissyUI-M/demo/spinner/spinner.html)
+[Photo browser modal](https://wangzhengquan.github.io/UFO/demo/modal/photo-browser-modal.html)
+
+[Message box](https://wangzhengquan.github.io/UFO/demo/popup/message-box.html)
+
+[Photo brower](https://wangzhengquan.github.io/UFO/demo/slider/photo-browser.html)
+
+[Image slider](https://wangzhengquan.github.io/UFO/demo/slider/image-slider.html)
+
+[Slider](https://wangzhengquan.github.io/UFO/demo/slider/slider.html)
+
+[Slider vertical](https://wangzhengquan.github.io/UFO/demo/slider/slider-vertical.html)
+
+
+[Spinner](https://wangzhengquan.github.io/UFO/demo/spinner/spinner.html)
 
 
 
