@@ -1,0 +1,2 @@
+/*! 2019-12-28 */
+!function(a){var b="20151111";KISSY.config({packages:{UFO:{path:"../../../src",charset:"utf-8",combine:!1,tag:b,ignorePackageNameInUri:!0,debug:!0},mui:{path:"../../../lib/kissy_mui",charset:"utf-8",combine:!1,tag:b,ignorePackageNameInUri:!0,debug:!0},app:{path:"../",charset:"utf-8",combine:!1,tag:b,ignorePackageNameInUri:!0,debug:!0}}})}(window);
