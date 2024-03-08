@@ -1,23 +1,18 @@
 .artisan-list .item-avatar {
   padding-left: 80px;
-  min-height: 80px;
-}
-.artisan-list .item-avatar img:first-child {
-  top: 25px;
-  max-width: 50px;
-  max-height: 50px;
-}
+  min-height: 80px; }
+  .artisan-list .item-avatar img:first-child {
+    top: 25px;
+    max-width: 50px;
+    max-height: 50px; }
 .artisan-list .item {
   padding-top: 30px;
-  padding-bottom: 30px;
-}
-.artisan-list .item h2 {
-  font-weight: bold;
-}
-.artisan-list .item p {
-  font-size: 13px;
-  color: #999999;
-}
+  padding-bottom: 30px; }
+  .artisan-list .item h2 {
+    font-weight: bold; }
+  .artisan-list .item p {
+    font-size: 13px;
+    color: #999999; }
 .artisan-list .icon-forward {
   background: url(../img/gyz-forward.png) no-repeat center;
   display: block;
@@ -28,10 +23,8 @@
   right: 27px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-.artisan-list .icon-forward:before {
-  display: none;
-}
+  transform: translate(0, -50%); }
+  .artisan-list .icon-forward:before {
+    display: none; }
 
 /*# sourceMappingURL=topiclist_.css.map */

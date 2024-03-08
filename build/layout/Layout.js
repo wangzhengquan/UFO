@@ -1,3 +1,2 @@
-/*! 2019-12-28 */
-
-KISSY.add(function(l){function t(t){this.initLayout()}return UFO.augment(t,{alias:"layout",initLayout:function(){this.el=[]},doLayout:function(t){if(this.clearItems(),!l.isEmptyObject(t))for(var n,i=0,e=t.length;i<e;i++)null!=(n=t[i])&&null!=n&&(this.el.push(n.getEl?n.getEl():n),n.fire&&n.fire("afterrender",n))},clearItems:function(){this.el=[]},calculate:function(){},toEl:function(){return this.el}}),t});
+/*! 2024-03-08 */
+KISSY.add(function(u){function t(t){this.initLayout()}return UFO.augment(t,{alias:"layout",initLayout:function(){this.el=[]},doLayout:function(t){if(this.clearItems(),!u.isEmptyObject(t))for(var i,n=0,e=t.length;n<e;n++)null!=(i=t[n])&&(this.el.push(i.getEl?i.getEl():i),i.fire)&&i.fire("afterrender",i)},clearItems:function(){this.el=[]},calculate:function(){},toEl:function(){return this.el}}),t});

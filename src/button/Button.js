@@ -90,7 +90,7 @@ KISSY.add(function(S, Node, XTemplate, Component, tpl){
 				}
 				return false;
 			});
-			this.el.on('tap', function(e){
+			this.el.on('tap click', function(e){
 				//me.el.attr('disabled', 'disabled');
 				var propagation1 = true,
 				 	propagation2 = true;

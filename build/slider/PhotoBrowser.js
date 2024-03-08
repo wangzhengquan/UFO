@@ -1,3 +1,2 @@
-/*! 2019-12-28 */
-
-KISSY.add(function(s,t,e,r){function o(t){t=s.mix(t||{},{cls:"photo-browser",slideCls:"photo-browser-slide",activeCls:"active"},!1),o.superclass.constructor.call(this,t)}return s.extend(o,r),UFO.augment(o,{alias:"photobrowser",initComponent:function(){for(var t=[],s=0;s<this.data.length;s++){var e=this.data[s];t.push('<a href="'+(e.href?e.href:"javascript:;")+'" class="photo-browser-zoom-container"><img src="'+e.url+'"></a>')}this.items=t,o.superclass.initComponent.apply(this,arguments)}}),o},{requires:["node","xtemplate","./Slider"]});
+/*! 2024-03-08 */
+KISSY.add(function(s,t,e,o){function r(t){t=s.mix(t||{},{cls:"photo-browser",slideCls:"photo-browser-slide",activeCls:"active"},!1),r.superclass.constructor.call(this,t)}return s.extend(r,o),UFO.augment(r,{alias:"photobrowser",initComponent:function(){for(var t=[],s=0;s<this.data.length;s++){var e=this.data[s];t.push('<a href="'+(e.href||"javascript:;")+'" class="photo-browser-zoom-container"><img src="'+e.url+'"></a>')}this.items=t,r.superclass.initComponent.apply(this,arguments)}}),r},{requires:["node","xtemplate","./Slider"]});

@@ -1,3 +1,2 @@
-/*! 2019-12-28 */
-
-KISSY.add(function(e,t){return{getRecord:function(t){e.isString("form")&&(t=e.one(t));var r={};return t.all("input[type=text], input[type=radio]:checked, select, textfield, textarea").each(function(t,e){var a=t.attr("data-type"),n=t.attr("data-value")||t.val();null!=n&&null!=n&&(a&&"NUMBER"==a.toUpperCase()&&(n=Number(n)),r[t.attr("name")]=n)}),r},loadRecord:function(t,a){a=a||{};t.find("input[type=text], select").each(function(t,e){t.val(a($this.attr("name")))})}}},{requires:["node"]});
+/*! 2024-03-08 */
+KISSY.add(function(e,t){return{getRecord:function(t){e.isString("form")&&(t=e.one(t));var r={};return t.all("input[type=text], input[type=radio]:checked, select, textfield, textarea").each(function(t,e){var a=t.attr("data-type"),n=t.attr("data-value")||t.val();null!=n&&(a&&"NUMBER"==a.toUpperCase()&&(n=Number(n)),r[t.attr("name")]=n)}),r},loadRecord:function(t,a){a=a||{};t.find("input[type=text], select").each(function(t,e){t.val(a($this.attr("name")))})}}},{requires:["node"]});

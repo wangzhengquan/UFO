@@ -2,9 +2,9 @@
 该项目是基于kissy开发的一套移动端的组件框架
 
 ## 项目演示
-[项目演示链接](https://wangzhengquan.github.io/UFO/project/build/home/index2.html)
+[项目演示链接](./project/build/home/index2.html)
 
-[项目演示链接2](https://wangzhengquan.github.io/UFO/project/build/home/index.html)
+[项目演示链接2](./UFO/project/build/home/index.html)
 
 ## 实例演示
 

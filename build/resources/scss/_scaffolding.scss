@@ -34,7 +34,7 @@ body.ufo-body {
   left: 0;
   overflow: hidden;
 
-  margin: 0;
+  margin:0 auto;
   padding: 0;
 
   color: $base-color;
@@ -44,6 +44,7 @@ body.ufo-body {
   line-height: $line-height-computed;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-user-drag: none;
   -ms-content-zooming: none;
 }

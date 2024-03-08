@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "private": true,
-  "name": "KissyUI-m",
+  "name": "UFO",
   "description": "",
   "repository": "",
   "license": "MIT",
@@ -20,7 +20,7 @@
    
   },
   "scripts": {
-    "start": "http-server -a 0.0.0.0 -p 8080",
+    "start": "http-server ./ -a 0.0.0.0 -p 80",
     "prec":  "kissy-xtemplate -p ./ -w"   
   }
 }
