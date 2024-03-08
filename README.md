@@ -8,37 +8,37 @@
 
 ## 实例演示
 
-[tabpanel](https://wangzhengquan.github.io/UFO/demo/tab/tabpanel.html)
+[tabpanel](./UFO/demo/tab/tabpanel.html)
 
-[actionsheet](https://wangzhengquan.github.io/UFO/demo/actionsheet/actionsheet.html)
+[actionsheet](./UFO/demo/actionsheet/actionsheet.html)
 
-[form](https://wangzhengquan.github.io/UFO/demo/form/form.html)
+[form](./UFO/demo/form/form.html)
 
-[icon](https://wangzhengquan.github.io/UFO/demo/icon/icon.html)
+[icon](./UFO/demo/icon/icon.html)
 
-[Item avatar](https://wangzhengquan.github.io/UFO/demo/item/item-avatar.html)
+[Item avatar](./UFO/demo/item/item-avatar.html)
 
-[Item icon](https://wangzhengquan.github.io/UFO/demo/item/item-icon.html)
+[Item icon](./UFO/demo/item/item-icon.html)
 
-[Ttem thumbnail](https://wangzhengquan.github.io/UFO/demo/item/item-thumbnail.html)
+[Ttem thumbnail](./UFO/demo/item/item-thumbnail.html)
 
-[Mask](https://wangzhengquan.github.io/UFO/demo/mask/mask.html)
-
-
-[Photo browser modal](https://wangzhengquan.github.io/UFO/demo/modal/photo-browser-modal.html)
-
-[Message box](https://wangzhengquan.github.io/UFO/demo/popup/message-box.html)
-
-[Photo brower](https://wangzhengquan.github.io/UFO/demo/slider/photo-browser.html)
-
-[Image slider](https://wangzhengquan.github.io/UFO/demo/slider/image-slider.html)
-
-[Slider](https://wangzhengquan.github.io/UFO/demo/slider/slider.html)
-
-[Slider vertical](https://wangzhengquan.github.io/UFO/demo/slider/slider-vertical.html)
+[Mask](./UFO/demo/mask/mask.html)
 
 
-[Spinner](https://wangzhengquan.github.io/UFO/demo/spinner/spinner.html)
+[Photo browser modal](./UFO/demo/modal/photo-browser-modal.html)
+
+[Message box](./UFO/demo/popup/message-box.html)
+
+[Photo brower](./UFO/demo/slider/photo-browser.html)
+
+[Image slider](./UFO/demo/slider/image-slider.html)
+
+[Slider](./UFO/demo/slider/slider.html)
+
+[Slider vertical](./UFO/demo/slider/slider-vertical.html)
+
+
+[Spinner](./UFO/demo/spinner/spinner.html)
 
 
 

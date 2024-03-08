@@ -14,3 +14,4 @@ node_modules/
 tmp/
 .sass-cache/
 *.map
+package-lock.json
