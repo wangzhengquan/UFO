@@ -58,7 +58,7 @@ KISSY.add(function(S, Anim, Node, Container){
 					setTimeout(function(){
 						cb && cb();
 					}, 400);
-				}else{
+				} else {
 					if(this.animation=='slide-in-up'){
 						this.modal.css("top", "100%");
 						this.modal.animate({

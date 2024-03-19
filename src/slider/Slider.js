@@ -421,7 +421,8 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 				 
 				return true;
 			});*/
-			this.el.delegate('touchstart', '.slider-slide', function(e){
+			this.el.delegate('touchstart mousedown', '.slider-slide', function(e){
+				console.log("mousedown= ", e)
 				me.stop();
 				me.touching = true;
 				me.sliderWrapper.css({
@@ -429,18 +430,21 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 					'transition-duration': '0s'
 				});
 				 
-				me.startX = e.changedTouches[0].clientX;
-				me.startY = e.changedTouches[0].clientY;
+				me.startX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+				me.startY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
 				
-				me.startPos = me.direction == 'horizontal' ? e.changedTouches[0].clientX : e.changedTouches[0].clientY;
+				me.startPos = me.direction == 'horizontal' ? me.startX : me.startY;
 				
 				me.startT = new Date().getTime();//如果快速手滑，则掠过touchmove，因此需要计算时间
 				//return false;
 			});
 			
-			this.el.delegate('touchend', '.slider-slide', function(e){
+			this.el.delegate('touchend mouseup', '.slider-slide', function(e){
+				console.log("mouseup= ", e)
 				me.touching = false;
-				var endPos = me.direction == 'horizontal' ? e.changedTouches[0].clientX : e.changedTouches[0].clientY;
+				let clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+				let clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
+				var endPos = me.direction == 'horizontal' ? clientX : clientY;
 				 
 				me.delta = Math.abs(endPos - me.startPos);//滑过的距离
 				var swipe_forward = Math.abs(endPos) < Math.abs(me.startPos);//是否是向左滑动
@@ -461,7 +465,7 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 						me.previous();
 					}
 				};
-				var isScrolling = ( Math.abs(me.delta) < Math.abs( me.direction == 'horizontal' ? (e.changedTouches[0].clientY- me.startY) : (e.changedTouches[0].clientX- me.startX) ) ) ? true: false
+				var isScrolling = ( Math.abs(me.delta) < Math.abs( me.direction == 'horizontal' ? (clientY- me.startY) : (clientX- me.startX) ) ) ? true: false
 				if(!anti && !isScrolling &&(
 						// 支持touchmove，跑马灯效果，任意帧，touchmove足够的距离
 						(me.delta > me.slideSize / 2)
@@ -482,13 +486,18 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 			 
 			});
 			
-			this.el.delegate('touchmove', '.slider-slide', function(e){
+			this.el.delegate('touchmove mousemove', '.slider-slide', function(e){
+				// console.log("move", e)
+				if (!me.touching) {
+					return true;
+				}
 				var slideSize = me.slideSize;
 				// 确保单手指滑动，而不是多点触碰
-				if(e.touches.length > 1 ) return;
-
+				if(e.touches && e.touches.length > 1 ) return;
+				let clientX = e.touches ? e.touches[0].clientX : e.clientX;
+				let clientY = e.touches ? e.touches[0].clientY : e.clientY;
 				//delta > 0 ，右移，delta < 0 左移
-				me.delta = me.direction == 'horizontal' ? e.touches[0].clientX- me.startPos : e.touches[0].clientY- me.startPos; 
+				me.delta = me.direction == 'horizontal' ? clientX- me.startPos : clientY- me.startPos; 
 
 				//判断是否在边界反滑动，true，出现了反滑动，false，正常滑动
 				var anti = me.loop ? false : ( me.isLast() && me.delta < 0 || me.isFirst() && me.delta > 0 );
@@ -499,7 +508,7 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 
 				// 判断是否需要上下滑动页面
 
-				var isScrolling = ( Math.abs(me.delta) < Math.abs( me.direction == 'horizontal' ? (e.touches[0].clientY- me.startY) : (e.touches[0].clientX- me.startX) ) ) ? true: false
+				var isScrolling = ( Math.abs(me.delta) < Math.abs( me.direction == 'horizontal' ? (clientY- me.startY) : (clientX- me.startX) ) ) ? true: false
 
 				if(!isScrolling){
 					// 阻止默认上下滑动事件

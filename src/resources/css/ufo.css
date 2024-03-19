@@ -3049,7 +3049,8 @@ html {
  */
 body {
   margin: 0;
-  line-height: 1; }
+  line-height: 1;
+  position: relative; }
 
 /**
  * Remove default outlines.
@@ -3302,7 +3303,6 @@ table {
   box-sizing: border-box; }
 
 html {
-  overflow: hidden;
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
 
@@ -5129,13 +5129,10 @@ ion-tabs.tabs-color-active-dark .tab-item {
 
 @media (min-width: 680px) {
   .modal {
-    top: 20%;
-    right: 20%;
-    bottom: 20%;
-    left: 20%;
-    min-height: 240px;
-    width: 60%;
-    height: auto; }
+    width: 680px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) !important; }
 
   .modal.ng-leave-active {
     bottom: 0; }
@@ -9553,5 +9550,10 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+@media screen and (min-width: 680px) {
+  body, html {
+    width: 680px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=ufo.css.map */

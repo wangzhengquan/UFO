@@ -20,7 +20,7 @@
    
   },
   "scripts": {
-    "start": "http-server ./ -a 0.0.0.0 -p 80",
+    "start": "http-server ./ -a 0.0.0.0 -p 3000",
     "prec":  "kissy-xtemplate -p ./ -w"   
   }
 }

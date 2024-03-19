@@ -124,7 +124,7 @@
 
 })();
 
-KISSY.add(function(S){
-  return window.UFO;
-});
+// KISSY.add(function(S){
+//   return window.UFO;
+// });
 

@@ -35,17 +35,31 @@
   background-color: $modal-bg-color;
 }
 
+// @media (min-width: $modal-inset-mode-break-point) {
+//   .modal {
+//     width: $modal-inset-mode-break-point;
+//     margin: 0 auto;
+//   }
+  
+// }
+
 @media (min-width: $modal-inset-mode-break-point) {
   // inset mode is when the modal doesn't fill the entire
   // display but instead is centered within a large display
   .modal {
-    top: $modal-inset-mode-top;
-    right: $modal-inset-mode-right;
-    bottom: $modal-inset-mode-bottom;
-    left: $modal-inset-mode-left;
-    min-height: $modal-inset-mode-min-height;
-    width: (100% - $modal-inset-mode-left - $modal-inset-mode-right);
-    height: auto;
+    // top: $modal-inset-mode-top;
+    // right: $modal-inset-mode-right;
+    // bottom: $modal-inset-mode-bottom;
+    // left: $modal-inset-mode-left;
+    // min-height: $modal-inset-mode-min-height;
+    // width: (100% - $modal-inset-mode-left - $modal-inset-mode-right);
+    // height: auto;
+
+    width: $modal-inset-mode-break-point;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%) !important;
+    
   }
 
   .modal.ng-leave-active {
