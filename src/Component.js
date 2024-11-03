@@ -71,9 +71,9 @@ KISSY.add(function(S, Node, EventSupport, ComponentQuery){
 			return this.toEl();
 		},
 		
-	    getTargetEl : function() {
-	         
-	    },
+    getTargetEl : function() {
+         
+    },
 	    
 	    /*
 	     * 添加子元素的位置
@@ -98,16 +98,16 @@ KISSY.add(function(S, Node, EventSupport, ComponentQuery){
 		},
 		 
 		onAdded : function(container, pos) {
-	        var me = this;
-	        me.ownerCt = container;
-	        me.fireEvent('added', me, container, pos);
-	    },
+        var me = this;
+        me.ownerCt = container;
+        me.fireEvent('added', me, container, pos);
+	  },
 	    
 		css: function(name, value){
 			var args = Array.prototype.slice.call(arguments, 0);
 			if(args.length === 1 && S.isString(args[0])){
 				 el.css(name);
-			}else{
+			} else {
 				this.el.css(name, value);
 			}
 			
@@ -183,23 +183,23 @@ KISSY.add(function(S, Node, EventSupport, ComponentQuery){
 		 * @returns
 		 */
 		up: function(selector) {
-	        // Use bubble target to navigate upwards so that Components can implement their own hierarchy.
-	        // For example Menus implement getBubbleTarget because they have a parentMenu or ownerButton as an
-	        // upward link depending upon how they are owned and triggered.
+      // Use bubble target to navigate upwards so that Components can implement their own hierarchy.
+      // For example Menus implement getBubbleTarget because they have a parentMenu or ownerButton as an
+      // upward link depending upon how they are owned and triggered.
 			var result = this.getBubbleTarget();
-	        if (selector) {
-	            for (; result; result = result.getBubbleTarget()) {
-	                if (ComponentQuery.is(result, selector)) {
-	                    return result;
-	                }
-	            }
-	        }
-	        return result;
-	    },
-	    
-	    getBubbleTarget: function(){
-	    	return this.ownerCt;
-	    },
+      if (selector) {
+          for (; result; result = result.getBubbleTarget()) {
+              if (ComponentQuery.is(result, selector)) {
+                  return result;
+              }
+          }
+      }
+      return result;
+    },
+    
+    getBubbleTarget: function(){
+    	return this.ownerCt;
+    },
 	 
 		addCmpEvents: function(){},
 		

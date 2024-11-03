@@ -118,6 +118,6 @@ module.exports = function (grunt) {
   // 默认任务
   grunt.registerTask('build', ['clean','sass', 'copy', 'uglify', 'cssmin']);
   return grunt.registerTask('default', '默认流程', function(type) {
-	  task.run(['clean', 'sass', 'copy', 'uglify', 'cssmin']);
+	  task.run(['build']);
 	});
 }

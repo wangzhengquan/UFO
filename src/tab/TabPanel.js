@@ -134,7 +134,9 @@ KISSY.add(function(S, Node, Event, XTemplate, Button, Container,
 				
 				if(!item.loaded){
 					//懒加载，如果有path(引用路径)，可实现按需加载js组件
-					if(item.path){
+
+					if(item.path && !UFO.getConstructor(item.type)){
+						// debugger;
 						S.use(item.path, function(S, constructor){
 							me.createTabItem(item, index);
 							me.setActiveTabStyle(index);

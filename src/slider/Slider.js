@@ -442,8 +442,8 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 			this.el.delegate('touchend mouseup', '.slider-slide', function(e){
 				console.log("mouseup= ", e)
 				me.touching = false;
-				let clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
-				let clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
+				var clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+				var clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
 				var endPos = me.direction == 'horizontal' ? clientX : clientY;
 				 
 				me.delta = Math.abs(endPos - me.startPos);//滑过的距离
@@ -494,8 +494,8 @@ KISSY.add(function(S, Node, Event, XTemplate, Container, tpl){
 				var slideSize = me.slideSize;
 				// 确保单手指滑动，而不是多点触碰
 				if(e.touches && e.touches.length > 1 ) return;
-				let clientX = e.touches ? e.touches[0].clientX : e.clientX;
-				let clientY = e.touches ? e.touches[0].clientY : e.clientY;
+				var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+				var clientY = e.touches ? e.touches[0].clientY : e.clientY;
 				//delta > 0 ，右移，delta < 0 左移
 				me.delta = me.direction == 'horizontal' ? clientX- me.startPos : clientY- me.startPos; 
 

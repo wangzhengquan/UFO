@@ -1,2 +1,2 @@
-/*! 2024-03-19 */
+/*! 2024-11-03 */
 KISSY.add(function(u){function t(t){this.initLayout()}return UFO.augment(t,{alias:"layout",initLayout:function(){this.el=[]},doLayout:function(t){if(this.clearItems(),!u.isEmptyObject(t))for(var i,n=0,e=t.length;n<e;n++)null!=(i=t[n])&&(this.el.push(i.getEl?i.getEl():i),i.fire)&&i.fire("afterrender",i)},clearItems:function(){this.el=[]},calculate:function(){},toEl:function(){return this.el}}),t});

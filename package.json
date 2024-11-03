@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "http-server ./ -a 0.0.0.0 -p 3000",
-    "prec":  "kissy-xtemplate -p ./ -w"   
+    "build":  "grunt"   
   }
 }
 

@@ -69,9 +69,9 @@
 
       /**
       * @demo createItem{
-        *  type: 'button',
-          *  text: 'ok'
-          * }
+      *  type: 'button',
+      *  text: 'ok'
+      * }
       * @param item
       * @param defaults
       * @returns

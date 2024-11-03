@@ -46,7 +46,7 @@ KISSY.add(function(S, Node, XTemplate, Component, Layout, ComponentQuery){
 				
 				if (!S.isArray(items)) {
 					items = [items];
-	            }
+	      }
 				this.items = [];
 				
 				this.add(items);
